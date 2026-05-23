@@ -157,19 +157,6 @@
       transform:scale(1.04);
     }
 
-    /* 🎥 PREMIUM VIDEO GRID */
-    .video-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:18px;
-    }
-
-    .video-grid video{
-      width:100%;
-      border-radius:18px;
-      box-shadow:0 10px 20px rgba(0,0,0,0.25);
-    }
-
     /* 💌 MESSAGE CARD */
     .message{
       margin-top:30px;
@@ -231,10 +218,6 @@
       .photo-grid img{
         height:180px;
       }
-
-      .video-grid{
-        grid-template-columns:1fr;
-      }
     }
 
   </style>
@@ -278,29 +261,6 @@
       <img src="images/photo5.jpg" onclick="openImage(this.src)">
       <img src="images/photo6.jpg" onclick="openImage(this.src)">
       <img src="images/photo7.jpg" onclick="openImage(this.src)">
-
-    </div>
-
-    <!-- 🎥 VIDEOS -->
-    <h2>🎥 Video Memories</h2>
-
-    <div class="video-grid">
-
-      <video controls preload="metadata">
-  <source src="videos/video1.mp4" type="video/mp4">
-</video>
-      <video controls preload="metadata">
-  <source src="videos/video2.mp4" type="video/mp4">
-</video>
-      <video controls preload="metadata">
-  <source src="videos/video3.mp4" type="video/mp4">
-</video>
-      <video controls preload="metadata">
-  <source src="videos/video4.mp4" type="video/mp4">
-</video>
-      <video controls preload="metadata">
-  <source src="videos/video5.mp4" type="video/mp4">
-</video>
 
     </div>
 
